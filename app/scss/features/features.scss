@@ -1,0 +1,146 @@
+.features {
+  margin-bottom: 125px;
+  position: relative;
+  z-index: 100;
+
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: 1441px;
+    background: rgba(22, 154, 250, 0.08);
+    filter: blur(256px);
+    width: 1441px;
+    height: 1441px;
+    left: -40%;
+    top: 0;
+    z-index: -1;
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 62px;
+  }
+}
+
+.features__title {
+  max-width: 1088px;
+  margin-bottom: 117px;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 42px;
+  }
+}
+
+.features__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+
+  @media screen and (max-width: 1450px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 1024px) {
+    gap: 15px;
+  }
+}
+
+.features__card {
+  padding: 60px;
+  background-color: transparent;
+  color: #fff;
+  height: 479px;
+  width: 474px;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    #88d3fd,
+    #005281 20%,
+    #1e90d0 61%,
+    #42a9ce
+  );
+  border-image-slice: 1;
+
+  @media screen and (max-width: 1024px) {
+    padding: 30px;
+    height: 430px;
+    width: 430px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 349px;
+    height: 387px;
+    padding: 17px;
+  }
+}
+
+.features__card--small {
+  width: 422px;
+
+  @media screen and (max-width: 768px) {
+    height: 340px;
+    width: 430px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 356px;
+    height: 282px;
+  }
+}
+
+.features__card-title {
+  max-width: 286px;
+  font-size: 24px;
+  font-weight: 500;
+  background: linear-gradient(
+    43deg,
+    rgba(255, 255, 255, 0.72) 0%,
+    #fff 39.77%,
+    rgba(169, 198, 215, 0.64) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 15px;
+  }
+}
+
+.features__card-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  span {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &.features__card-item--checked {
+    span {
+      color: $primaryBlue;
+    }
+  }
+}
+
+.features__card-item + .features__card-item {
+  margin-top: 25px;
+
+  @media screen and (max-width: 480px) {
+    margin-top: 15px;
+  }
+}
+
+.features__card-logo {
+  margin-bottom: 25px;
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 15px;
+  }
+}
