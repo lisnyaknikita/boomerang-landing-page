@@ -3,22 +3,22 @@
   position: relative;
   z-index: 100;
 
-  &::after {
-    content: '';
-    position: absolute;
-    border-radius: 1441px;
-    background: rgba(22, 154, 250, 0.08);
-    filter: blur(256px);
-    width: 1441px;
-    height: 1441px;
-    left: -40%;
-    top: 0;
-    z-index: -1;
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   border-radius: 1441px;
+  //   background: rgba(22, 154, 250, 0.08);
+  //   filter: blur(256px);
+  //   width: 1441px;
+  //   height: 1441px;
+  //   left: -40%;
+  //   top: 0;
+  //   z-index: -1;
 
-    @media screen and (max-width: 480px) {
-      display: none;
-    }
-  }
+  //   @media screen and (max-width: 480px) {
+  //     display: none;
+  //   }
+  // }
 
   @media screen and (max-width: 480px) {
     margin-bottom: 62px;

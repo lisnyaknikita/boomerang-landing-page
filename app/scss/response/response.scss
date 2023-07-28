@@ -1,4 +1,6 @@
 .response {
+  margin-bottom: 227px;
+
   @media screen and (max-width: 1200px) {
     margin-bottom: 150px;
   }
@@ -8,9 +10,13 @@
   }
 }
 
-.response__inner {
+.response__description {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
@@ -62,5 +68,102 @@
 
   @media screen and (max-width: 480px) {
     font-size: 18px;
+  }
+}
+
+.response__dynamic {
+  padding-top: 57px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 584px;
+    height: 1px;
+    background-color: $primaryBlue;
+    top: 0;
+    left: 0;
+
+    @media screen and (max-width: 1200px) {
+      width: 400px;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 159px;
+    }
+  }
+}
+
+.response__dynamic-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 73px;
+  color: #fff;
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 18px;
+    font-size: 18px;
+  }
+}
+
+.response__dynamic-chart {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1200px) {
+    img {
+      max-width: 65%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    img {
+      max-width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    > img {
+      width: 360px;
+    }
+  }
+}
+
+.response-dynamic__legend-title {
+  color: $primaryBlue;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 17px;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
+}
+
+.response-dynamic__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
