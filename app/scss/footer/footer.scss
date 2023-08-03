@@ -13,6 +13,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    z-index: 0;
 
     @media screen and (max-width: 1620px) {
       right: -10%;
@@ -44,6 +45,9 @@
   flex-direction: column;
   align-items: center;
   gap: 39px;
+
+  position: relative;
+  z-index: 1;
 }
 
 .footer__social {

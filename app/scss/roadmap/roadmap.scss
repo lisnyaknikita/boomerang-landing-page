@@ -124,7 +124,7 @@
     background-image: url('../../images/roadmap/step-title-bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    z-index: 0;
     width: 258px;
     height: 56px;
     left: 0;
@@ -145,12 +145,19 @@
     margin-right: 43px;
     text-align: center;
     margin-left: 65px;
+    position: relative;
+    z-index: 1;
 
     @media screen and (max-width: 800px) {
       max-width: 228px;
       margin-left: 82px;
       margin-right: 57px;
     }
+  }
+
+  img {
+    position: relative;
+    z-index: 1;
   }
 
   @media screen and (max-width: 800px) {

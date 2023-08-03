@@ -1,5 +1,7 @@
 .response {
   margin-bottom: 227px;
+  position: relative;
+  z-index: 999;
 
   @media screen and (max-width: 1200px) {
     margin-bottom: 150px;
