@@ -1,10 +1,23 @@
 .roadmap {
-  margin-bottom: 22px;
+  margin-bottom: 224px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 52px;
+  }
 }
 
 .roadmap__inner {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 1360px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 480px) {
+    align-items: flex-start;
+  }
 }
 
 .roadmap__text {
@@ -21,6 +34,10 @@
 
 .roadmap__content {
   margin-top: 20px;
+
+  @media screen and (max-width: 1360px) {
+    margin-top: 64px;
+  }
 }
 
 .roadmap__subtitle {
@@ -39,11 +56,34 @@
     height: 1px;
     width: 584px;
     background-color: $primaryBlue;
+
+    @media screen and (max-width: 1360px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media screen and (max-width: 480px) {
+      left: 83%;
+    }
+  }
+
+  @media screen and (max-width: 1360px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 30px;
   }
 }
 
 .roadmap__steps {
   display: flex;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 .roadmap__step {
@@ -55,8 +95,17 @@
         max-width: 119px;
         margin-right: 22px;
         margin-left: 45px;
+
+        @media screen and (max-width: 800px) {
+          margin-left: 82px;
+          margin-right: 80px;
+        }
       }
     }
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 352px;
   }
 }
 
@@ -81,6 +130,11 @@
     left: 0;
     top: 0;
     bottom: 0;
+
+    @media screen and (max-width: 800px) {
+      background-image: url('../../images/roadmap/step-title-img-mobile.svg');
+      width: 352px;
+    }
   }
 
   h6 {
@@ -91,6 +145,16 @@
     margin-right: 43px;
     text-align: center;
     margin-left: 65px;
+
+    @media screen and (max-width: 800px) {
+      max-width: 228px;
+      margin-left: 82px;
+      margin-right: 57px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 20px;
   }
 }
 
@@ -116,6 +180,14 @@
     background-position: center;
     width: 11px;
     height: 11px;
+
+    @media screen and (max-width: 800px) {
+      left: 8px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    max-width: 100%;
   }
 }
 
