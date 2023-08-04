@@ -53,6 +53,7 @@
 .footer__social {
   .socials {
     gap: 5px;
+    pointer-events: all;
 
     @media screen and (max-width: 768px) {
       position: relative;
@@ -65,6 +66,11 @@
   .socials li a {
     width: 65px;
     height: 65px;
+
+    transition: transform 0.2s;
+    &:active {
+      transform: scale(0.95);
+    }
 
     img {
       width: 45%;

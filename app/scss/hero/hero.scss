@@ -65,6 +65,11 @@
 }
 
 .hero__links {
+  transition: transform 0.2s;
+  a:active {
+    transform: scale(0.95);
+  }
+
   display: flex;
   gap: 30px;
   align-items: center;
