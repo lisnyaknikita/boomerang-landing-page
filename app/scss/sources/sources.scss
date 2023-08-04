@@ -6,18 +6,12 @@
   }
 }
 
-.sources__inner {
-}
-
 .sources__title {
   margin-bottom: 106px;
 
   @media screen and (max-width: 480px) {
     display: none;
   }
-}
-
-.sources__scheme {
 }
 
 .sources-scheme__top {
@@ -261,12 +255,6 @@
       display: none;
     }
   }
-
-  // @media screen and (max-width: 768px) {
-  //   &:last-child {
-  //     display: none;
-  //   }
-  // }
 }
 
 .sources-scheme__box-icon {
